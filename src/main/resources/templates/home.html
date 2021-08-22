@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:tiles="http://www.thymeleaf.org">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title tiles:fragment="title">Please Sign Up</title>
+  </head>
+  <body>
+  
+  <h1>HI THERE, WELCOME TO MY PAGE</h1>
+  <img src="images/pig.jpg" alt="" width="300"/>
+    <div tiles:fragment="content">
+        <form name="flogout" th:action="@{/myLogout}" method="post">
+	         <div class="form-actions">
+	                <button type="submit" class="btn">Logout</button>
+	         </div>
+	    </form>
+    </div>
+  </body>
+</html>
